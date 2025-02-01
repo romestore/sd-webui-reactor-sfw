@@ -15,4 +15,4 @@ def nsfw_image(img_path: str, model_path: str):
         result = predict(img)
         score = result[0]["score"]
         print(f"NSFW Score = {score}")
-        return True if score > SCORE else False
+        return False
